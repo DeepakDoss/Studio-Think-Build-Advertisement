@@ -18,6 +18,18 @@
         a {
             color: lightblue;
         }
+        @media (max-width: 768px) {
+            #disp{
+                flex-direction: column;
+            }
+            #imag{
+                width: 80%;
+                margin-left: 20px;
+            }
+            #text{
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -29,18 +41,22 @@
         </div>
         <hr>
     </center>
-    <div style="display: flex;">
-        <img src="1765859830949.jpg" width=400>
-        <ul style=" font-size: larger;">
-            <li>Studio Think Build is a creative and technology-driven startup built on a simple belief: great solutions
-                start with deep thinking and grow through smart execution.</li>
-            <li>We focus on understanding real problems, designing meaningful experiences, and building practical
-                digital solutions such as websites, branding, and intelligent tools for individuals and businesses.</li>
-            <li>Started by passionate learners and builders, Studio Think Build is not just a company—it’s a growing
-                studio where ideas turn into impact, skills turn into products, and teamwork turns vision into reality.
-            </li>
-            <li>Founder of Studio Think Build : <a href="#cdq">Abukkar Siddiq . J</a></li>
-        </ul>
+    <div id="disp" style="display: flex;">
+        <div id="imag">
+            <img src="1765859830949.jpg" width=400>
+        </div>
+        <div id="text">
+            <ul style=" font-size: larger;">
+                <li>Studio Think Build is a creative and technology-driven startup built on a simple belief: great solutions
+                    start with deep thinking and grow through smart execution.</li>
+                <li>We focus on understanding real problems, designing meaningful experiences, and building practical
+                    digital solutions such as websites, branding, and intelligent tools for individuals and businesses.</li>
+                <li>Started by passionate learners and builders, Studio Think Build is not just a company—it’s a growing
+                    studio where ideas turn into impact, skills turn into products, and teamwork turns vision into reality.
+                </li>
+                <li>Founder of Studio Think Build : <a href="#cdq">Abukkar Siddiq . J</a></li>
+            </ul>
+        </div>
     </div>
     <hr>
     <div style="margin-left: 20px;">
@@ -56,7 +72,7 @@
         <center>
             <h2>Contact Details</h2>
         </center>
-        <div style="display: flex; margin-left: 475px; border: 2px solid white; width: fit-content;">
+        <div style="display: flex; margin-left: auto; margin-right: auto; border: 2px solid white; width: fit-content;">
             <img src="1765849057948.png" width=200>
             <div style="margin-left: 20px; margin-right: 20px; padding-bottom: 10px;">
                 <p><b>Name :</b> Abubakkar Siddiq . J</p>
@@ -72,3 +88,4 @@
 
 
 </html>
+
