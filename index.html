@@ -7,27 +7,61 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0, height=device-height">
     <style>
         body {
-            background-color: black;
-            color: white;
+            background-color: lightgrey;
+            color: black;
         }
 
         li {
             margin: 20px;
         }
+        h1,h2{
+            color: black;
+        }
+        #disp {
+            background-color: black;
+            margin: 30px;
+            color: white;
+            border: 2px solid snow;
+            box-shadow: 20px 20px 20px 0px black;
+        }
 
         a {
-            color: lightblue;
+            color: blue;
         }
+
+        #cdq {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+            width: fit-content;
+            box-shadow: 20px 20px 20px 0px black;
+            display: flex;
+            max-width: 100%;
+        }
+
         @media (max-width: 768px) {
-            #disp{
+            #disp {
                 flex-direction: column;
             }
-            #imag{
-                width: 80%;
-                margin-left: 20px;
-            }
-            #text{
+
+            #imgg {
                 width: 100%;
+            }
+
+            #text {
+                width: 100%;
+            }
+
+            #cdq{
+                flex-direction: column;
+            }
+
+            #abu {
+                width: 375px;
+                margin: auto;
             }
         }
     </style>
@@ -37,24 +71,27 @@
     <center>
         <div>
             <h1>Studio Think Build</h1>
-            <p>Think Deep | Build Smart | Create Impact</p>
+            <p style="color: black;">Think Deep | Build Smart | Create Impact</p>
         </div>
         <hr>
     </center>
-    <div id="disp" style="display: flex;">
+    <div id="disp" style="display: flex; max-width: 100%;">
         <div id="imag">
-            <img src="1765859830949.jpg" width=400>
+            <img id="imgg" src="1765859830949.jpg" width=400>
         </div>
         <div id="text">
             <ul style=" font-size: larger;">
-                <li>Studio Think Build is a creative and technology-driven startup built on a simple belief: great solutions
+                <li>Studio Think Build is a creative and technology-driven startup built on a simple belief: great
+                    solutions
                     start with deep thinking and grow through smart execution.</li>
                 <li>We focus on understanding real problems, designing meaningful experiences, and building practical
-                    digital solutions such as websites, branding, and intelligent tools for individuals and businesses.</li>
-                <li>Started by passionate learners and builders, Studio Think Build is not just a company—it’s a growing
-                    studio where ideas turn into impact, skills turn into products, and teamwork turns vision into reality.
+                    digital solutions such as websites, branding, and intelligent tools for individuals and businesses.
                 </li>
-                <li>Founder of Studio Think Build : <a href="#cdq">Abukkar Siddiq . J</a></li>
+                <li>Started by passionate learners and builders, Studio Think Build is not just a company—it’s a growing
+                    studio where ideas turn into impact, skills turn into products, and teamwork turns vision into
+                    reality.
+                </li>
+                <li>Founder of Studio Think Build : <a href="#cdq" style="color: lightblue;">Abukkar Siddiq . J</a></li>
             </ul>
         </div>
     </div>
@@ -68,24 +105,23 @@
         </ol>
     </div>
     <hr>
-    <div id="cdq" style="margin-bottom: 100px;">
+    <div id="contactinfo" style="margin-bottom: 100px;">
         <center>
             <h2>Contact Details</h2>
         </center>
-        <div style="display: flex; margin-left: auto; margin-right: auto; border: 2px solid white; width: fit-content;">
-            <img src="1765849057948.png" width=200>
+        <div id="cdq">
+            <img id="abu" src="1765849057948.png" width=200>
             <div style="margin-left: 20px; margin-right: 20px; padding-bottom: 10px;">
                 <p><b>Name :</b> Abubakkar Siddiq . J</p>
                 <p><b>Mobile Number :</b> +91 63807 27787</p>
-                <p><b>Email Id :</b> <a href="mailto:abubakkarsiddiqjabu@gmail.com" target="_blank">
+                <p><b>Email Id :</b> <a href="mailto:abubakkarsiddiqjabu@gmail.com" target="_blank" style="color: lightblue;">
                         abubakkarsiddiqjabu@gmail.com</a></p>
                 <p><b>LinkedIn Account:</b> <a href="https://www.linkedin.com/in/abubakkar-siddiq-j-13bbb8305/"
-                        target="_blank">abubakkar-siddiq-j-13bbb8305</a></p>
+                        target="_blank" style="color: lightblue;">abubakkar-siddiq-j-13bbb8305</a></p>
             </div>
         </div>
     </div>
 </body>
-
 
 </html>
 
